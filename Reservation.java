@@ -33,10 +33,20 @@ public class Reservation {
             String name = scanner.next();
             String empty = scanner.nextLine();
             System.out.print("enter the Customer age : ");
-            int age = scanner.nextInt();
-            System.out.print("enter the licence id : ");
+           int age;
+            boolean flag = false;
+            do {
+                System.out.print("enter the Customer age : ");
+                age = scanner.nextInt();
+                if(age >= 18) {
+                    age = age;
+                    break;
+                }
+                else
+                    flag = true;
+            }while(true);
             String licenceId = scanner.next();
-            boolean flag = true;
+            flag = true;
             Custamer custamer = null;
             do {
                 flag = false;
