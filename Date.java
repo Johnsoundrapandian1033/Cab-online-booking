@@ -13,4 +13,7 @@ enum Month{
     public String getDate(){
         return "date : "+date+" - "+month+" - "+ year;
     }
+        public String getBirth(){
+        return "date of birth : "+date+" - "+month+" - "+ year;
+    }
 }
